@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+import sys
+
+print("testing opencv in python3")
+
+try:
+    import cv2
+    print("It works! Using OpenCV version {}".format(cv2.__version__))
+except Exception as e:
+    print("Doesn't work!: "+str(e.msg))
+

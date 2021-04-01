@@ -1,0 +1,11 @@
+-- sets timing to on
+\timing on
+
+-- display null values explicitly
+\pset null '[NULL]'
+
+-- use expanded display automatically
+\x auto
+
+-- tab completion defaults to upper case
+\set COMP_KEYWORD_CASE upper

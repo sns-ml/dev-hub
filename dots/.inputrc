@@ -1,0 +1,11 @@
+set meta-flag on
+set convert-meta off
+set output-meta on
+set mark-symlinked-directories on
+"\ep": history-search-backward
+"\e[A":history-search-backward
+"\en": history-search-forward
+"\e[B":history-search-forward
+"\C-h": backward-delete-char
+
+set completion-ignore-case

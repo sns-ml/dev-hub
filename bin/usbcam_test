@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+"""
+"""
+
+import cv2 as _cv2
+_cv2 = _cv2
+
+print("opening stream to {}".format(1))
+_stream = _cv2.VideoCapture(1)
+
+def frame_generator():
+    still_open,frame = _stream.read()
+    while still_open:
+        yield frame
+        still_open,frame = _stream.read()
+
+for frame in frame_generator():
+    if frame is not None:
+        _cv2.imshow('Video', frame)
+    else:
+        break
+    #if _cv2.waitKey(24) & 0xFF == ord('q'):
+    #    break
+    key = _cv2.waitKey(1) & 0xFF
+    if key == ord("q"):
+        break
+
+_stream.release()
+_cv2.destroyAllWindows()
+
+
+

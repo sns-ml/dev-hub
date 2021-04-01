@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "testing gstreamer"
+
+gst-launch-1.0 -v fakesrc silent=false num-buffers=3 ! fakesink silent=false
+

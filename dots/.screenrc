@@ -1,0 +1,11 @@
+termcapinfo xterm* ti@:te@
+
+multiuser on    # enable multiple users in same session
+autodetach on   # autodetach session on hangup instead of terminating screen
+vbell_msg "beep"
+
+startup_message off # Hide screen startup message
+#screen $SHELL -c 'screen -X caption always "$STY"'
+
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m/%d %{W}%c %{g}]'
