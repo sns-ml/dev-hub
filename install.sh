@@ -18,6 +18,7 @@ sudo apt install -y \
     wget \
     apt-transport-https \
     software-properties-common
+sudo apt autoremove -y
 
 sudo cp bin/* /usr/local/bin
 
@@ -31,7 +32,3 @@ cp -r ./dots/.[^.]* ${HOME}
 ## Set up Remote Access Configs
 sudo mkdir -p /usr/local/lib/xdisplay
 sudo cp ./lib/* /usr/local/lib/xdisplay
-
-mkdir -p ${HOME}/Downloads
-wget -P ${HOME}/Downloads/ https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-sudo chmod 664 ${HOME}/Downloads/teamviewer*
