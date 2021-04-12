@@ -10,8 +10,6 @@ sudo apt install -y \
     gnupg \
     lsb-release \
     hardinfo \
-    xorg-video-abi-23 \
-    xserver-xorg-video-dummy \
     vim \
     git \
     screen \
