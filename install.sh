@@ -20,13 +20,7 @@ sudo apt autoremove -y
 
 sudo cp bin/* /usr/local/bin
 
-
 ## Install Convenient Dotfiles
 git submodule init
 git submodule update
 cp -r ./dots/.[^.]* ${HOME}
-
-
-## Set up Remote Access Configs
-sudo mkdir -p /usr/local/lib/xdisplay
-sudo cp ./lib/* /usr/local/lib/xdisplay
